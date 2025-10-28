@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+<body>
+    <h1>Лабораторна робота №1</h1>
+    <h2>Робота з формами</h2>
+    <h2>Виконала Война Наталія, АнД-31</h2>
+    <a href = 'index.html'>На головну</a>
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для введення інформації про фільм
+        до БД фільмів. Необхідно заповнити наступні дані:</p>
+    <ul>
+        <li>дані про фільм, включають назву фільму, жанр (вибирається зі списку),
+            дату виходу на екрани, опис фільму, картинку з афішою;</li>
+        <li>дані про режисера, включають ПІБ, дату народження, біографію,
+            посилання на веб-сайт.</li>
+    </ul>
+    <form action = "" method = 'POST'>
+        <fieldset>
+            <legend>Знайдіть фільм</legend>
+            <label>Назва фільму
+                <input id = 'movie_name' type = 'text'>
+            </label>
+            <label>Жанр
+                <select>
+                    <option>Фантастика</option>
+                    <option>Бойовик</option>
+                    <option>Пригодницький</option>
+                    <option>Мелодрама</option>
+                    <option>Детектив</option>
+                </select>
+            </label>
+            <label>Дата виходу
+                <input type = 'date' id = 'performance_date'>
+            </label>
+            <label>Опис фільму
+                <input id = 'description' type = 'text'>
+            </label>
+            <lable>Додайте фото афіші
+                <input id = 'file' type = 'file'>
+            </lable>
+        </fieldset>
+        <fieldset>
+            <legend>Дані про режисера</legend>
+            <label> ПІБ
+                <input id = 'name' type = 'text'>
+            </label>
+            <p>Стать
+                <br>
+                <label>Чоловіча<input id = 'male' type = 'radio' name = 'sex'></label>
+                <label>Жіноча<input id = 'female' type = 'radio' name = 'sex'></label>
+            </p>
+            <label>Дата народження
+                <input id = 'birth' type = 'date'>
+            </label>
+            <br>
+            <label>Біографія
+                <textarea rows = 7 cols = 50></textarea>
+            </label>
+        </fieldset>
+        <button type = 'reset'>Тапай!</button>
+    </form>
+
+</body>
+</html>

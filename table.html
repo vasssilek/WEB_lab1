@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблиця</title>
+</head>
+<body>
+    <h1>Лабораторна робота №1</h1>
+    <h2>Робота з таблицями</h2>
+    <h2>Виконала Война Наталія, АнД-31</h2>
+    <a href = 'index.html'>На головну</a>
+    <h3>Завдання</h3>
+    <p>Описати веб-сторінку таблицею норми навантажень. Вигляд таблиці:</p>
+    <img src = 'lab1.png' alt = 'Таблиця' width = '50%'>
+    <br><br>
+    <table width = '70%' border = '1' bordercolor = 'black'>
+        <caption><i>Таблиця 1. </i><b>Навантаження на конструкції</b></caption>
+        <thead>
+            <tr bgcolor = '#f5f5dc'>
+                <th rowspan = '3'>№№</th>
+                <th rowspan = '3'>Конструкції</th>
+                <th rowspan = '3'>Найменування навантаження</th>
+                <th colspan = "8">Навантаження (над рисою - нормативні, під рисою - розрахункові)</th>
+            </tr>
+            <tr>
+                <th rowspan = '2'>Постійне</th>
+                <th colspan = '2'>Тимчасово тривале</th>
+                <th>Коефіцієнт сполучень</th>
+                <th colspan = '2'>Тимчасове короткочасне</th>
+                <th>Коефіцієнт сполучень</th>
+                <th rowspan='2'>Повне навантаження</th>
+            </tr>
+            <tr>
+                <th>V1</th>
+                <th>V2</th>
+                <th>w1</th>
+                <th>V3</th>
+                <th>V4</th>
+                <th>w2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td rowspan = '5'>Перекриття</td>
+                <td>У житлових приміщеннях при товщині плити:
+                    <p align = 'CENTER'>3 см</p><p align = 'CENTER'>5 см</p><p align = 'CENTER'>7 см</p>
+                </td>
+                <td><br><p align = 'CENTER'>282.8</p><p align = 'CENTER'>332.8</p><p align = 'CENTER'>441.2</p></td>
+                <td><br><p align = 'CENTER'>282.8</p><p align = 'CENTER'>332.8</p><p align = 'CENTER'>441.2</p></td>
+                <td><br><p align = 'CENTER'>282.8</p><p align = 'CENTER'>332.8</p><p align = 'CENTER'>441.2</p></td>
+                <td><br><p align = 'CENTER'>0.95</p><p align = 'CENTER'>0.95</p><p align = 'CENTER'>0.95</p></td>
+                <td><br><p align = 'CENTER'>282.8</p><p align = 'CENTER'>332.8</p><p align = 'CENTER'>441.2</p></td>
+                <td><br><p align = 'CENTER'>-</p><p align = 'CENTER'>-</p><p align = 'CENTER'>-</p></td>
+                <td><br><p align = 'CENTER'>0.9</p><p align = 'CENTER'>0.9</p><p align = 'CENTER'>0.9</p></td>
+                <td><br><p align = 'CENTER'>282.8</p><p align = 'CENTER'>332.8</p><p align = 'CENTER'>441.2</p></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>З урахуванням навантаження від омонолічування
+                    вищерозташованого поверху при товщині плити:
+                    <p align = 'CENTER'>3 см</p><p align = 'CENTER'>5 см</p><p align = 'CENTER'>7 см</p>
+                </td>
+                <td><br><br><br><p align = 'CENTER'>282.8</p><p align = 'CENTER'>332.8</p><p align = 'CENTER'>441.2</p></td>
+                <td><br><br><br><p align = 'CENTER'>-</p><p align = 'CENTER'>-</p><p align = 'CENTER'>-</p>
+                <td><br><br><br><p align = 'CENTER'>-</p><p align = 'CENTER'>-</p><p align = 'CENTER'>-</p>
+                <td><br><br><br><p align = 'CENTER'>-</p><p align = 'CENTER'>-</p><p align = 'CENTER'>-</p>
+                <td><br><br><br><p align = 'CENTER'>-</p><p align = 'CENTER'>-</p><p align = 'CENTER'>-</p>
+                <td><br><br><br><p align = 'CENTER'>282.8</p><p align = 'CENTER'>332.8</p><p align = 'CENTER'>441.2</p></td>
+                <td><br><br><br><p align = 'CENTER'>1.0</p><p align = 'CENTER'>1.0</p><p align = 'CENTER'>1.0</p></td>
+                <td><br><br><br><p align = 'CENTER'>282.8</p><p align = 'CENTER'>332.8</p><p align = 'CENTER'>441.2</p></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>В приміщеннях горища (товщина з/б плити - 5 см)</td>
+                <td>332.8</td>
+                <td><p align = 'CENTER'>-</p></td>
+                <td><p align = 'CENTER'>-</p></td>
+                <td><p align = 'CENTER'>-</p></td>
+                <td>70.0</td>
+                <td><p align = 'CENTER'>-</p></td>
+                <td>1.0</td>
+                <td>402.8</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>В приміщеннях горища з урахуванням навантажень від омонолічування покриття
+                (товщина з/б перекриття - 5 см, покриття - 3 см)</td>
+                <td>332.8</td>
+                <td><p align = 'CENTER'>-</p></td>
+                <td><p align = 'CENTER'>-</p></td>
+                <td><p align = 'CENTER'>-</p></td>
+                <td><p align = 'CENTER'>-</p></td>
+                <td>350.4</td>
+                <td>1.0</td>
+                <td>683.2</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>У вестибюлях, коридорах</td>
+                <td>332.8</td>
+                <td>100.0</td>
+                <td><p align = 'CENTER'>-</p></td>
+                <td>0.95</td>
+                <td>300.0</td>
+                <td><p align = 'CENTER'>-</p></td>
+                <td>0.9</td>
+                <td>697.8</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
